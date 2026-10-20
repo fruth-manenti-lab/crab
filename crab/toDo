@@ -1,0 +1,19 @@
+program opens
+------------configurtion stuff-------------
+load board config file
+  board config file should have the number of sipms, their xy positions, and which channels they are connected to
+  use json format
+  board config file traverses sipms from left to right and top to bottom. so we go top left first, then the sipm to the right of that one until we hit the end of the row, and begin again at the next row.
+ask user if they want to do s curves or load a default configuration file that has input dac values
+ask user if they want to do threshold scans or load a default conf file 
+ask user if they want to do a hold scan with the sipms or load a default conf file 
+
+------------acquisition stuff-------------
+ask user how many events they want
+start acquisition with requested events
+
+------------muon stuff-------------
+it would be really nice to have an event viewer. depends on how data is written to file
+the board can only trigger on an or gate. unless we mess with the firmware and add more complex trigger topologies, so we have to take all the data and then check if it was a valid muon event. this would have to be an and gate between any two sipms on the first and second board. maybe at least 2 neighbouring sipms on each level? will depend on how big the signals are 
+
+

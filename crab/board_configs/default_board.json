@@ -1,0 +1,9 @@
+{
+  "layers": 1,
+  "layer1":{
+    "sipms": 4,
+    "x_positions": [50, 100, 50, 100],
+    "y_positions": [50, 100, 50, 100],
+    "channels": [0, 1, 2, 3]
+  }
+}

@@ -5,9 +5,9 @@ import math
 
 from radioroc.protocol.frames import validate_integer
 
-DEFAULT_PORT = "/dev/cu.usbserial-RD3_320"
+DEFAULT_PORT = "/dev/ttyUSB0"
 DEFAULT_BAUD = 115200
-DEFAULT_TIMEOUT_SECONDS = 0.5
+DEFAULT_TIMEOUT_SECONDS = 3
 
 
 @dataclass
